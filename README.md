@@ -1,5 +1,8 @@
 # REST Assured OAuth API Automation
 
+## About
+This project demonstrates REST Assured API automation using Java.
+
 ## Tech Stack
 - Java
 - REST Assured
@@ -14,9 +17,16 @@
 - JSON Response Validation
 
 ## Project Structure
-src/main/java
-└── com.reshma.oauth
-    └── OAuthTest.java
+
+```text
+src
+└── main
+    └── java
+        └── com
+            └── reshma
+                └── oauth
+                    └── OAuthTest.java
+```
 
 ## Author
-Reshma Perween
+**Reshma Perween**
