@@ -3,70 +3,125 @@ package com.reshma.oauth;
 import static io.restassured.RestAssured.given;
 
 import io.restassured.path.json.JsonPath;
+import pojo.GetCourse;
 
 public class OAuthTest {
 
     public static void main(String[] args) {
 
-        // Store complete API response in String format
+        // Generate access token
         String response =
 
-                // Start building the HTTP request
                 given()
 
-                        // Pass OAuth Client ID
+                        // Pass client ID
                         .formParam("client_id",
                                 "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com")
 
-                        // Pass OAuth Client Secret
+                        // Pass client secret
                         .formParam("client_secret",
                                 "erZOWM9g3UtwNRj340YYaK_W")
 
-                        // Pass OAuth Grant Type
+                        // Pass grant type
                         .formParam("grant_type", "client_credentials")
 
-                        // Pass OAuth Scope
+                        // Pass scope
                         .formParam("scope", "trust")
 
-                // Hit Authorization Server
                 .when()
 
+                        // Send POST request
                         .post("https://rahulshettyacademy.com/oauthapi/oauth2/resourceOwner/token")
 
-                // Validate Response
                 .then()
 
-                        // Print complete response in console
+                        // Verify status code
+                        .statusCode(200)
+
+                        // Print response
                         .log().all()
 
-                        // Extract response as String
+                        // Extract response
                         .extract().response().asString();
 
-        // Print response separately
-        System.out.println(response);
+        // Create JsonPath object
         JsonPath js = new JsonPath(response);
-        String accessToken = js.getString("access_token");
-        System.out.println(accessToken);
-     // Store Get Course Details API response
-        String courseResponse =
 
-                // Start building secured GET request
+        // Get access token
+        String accessToken = js.getString("access_token");
+
+        // Print access token
+        System.out.println(accessToken);
+
+        // Call Get Course API
+        GetCourse courseResponse =
+
                 given()
 
-                // Pass Access Token as Query Parameter
-                .queryParam("access_token", accessToken)
+                        // Pass access token
+                        .queryParam("access_token", accessToken)
 
-                // Hit Get Course Details API
                 .when()
-                .get("https://rahulshettyacademy.com/oauthapi/getCourseDetails")
 
-                // Validate response and extract as String
+                        // Send GET request
+                        .get("https://rahulshettyacademy.com/oauthapi/getCourseDetails")
+
                 .then()
-                .log().all()
-                .extract().response().asString();
 
-        // Print Get Course Details response
-        System.out.println(courseResponse);          		
+                        // Print response
+                        .log().all()
+
+                        // Convert JSON to POJO
+                        .extract().as(GetCourse.class);
+
+        // Print instructor
+        System.out.println(courseResponse.getInstructor());
+
+        // Print LinkedIn
+        System.out.println(courseResponse.getLinkedIn());
+
+        // Print services
+        System.out.println(courseResponse.getServices());
+
+        // Print expertise
+        System.out.println(courseResponse.getExpertise());
+
+        // Print first API course
+        System.out.println(courseResponse.getCourses().getApi().get(0).getCourseTitle());
+
+        // Print all API courses
+        for (int i = 0; i < courseResponse.getCourses().getApi().size(); i++) {
+
+            System.out.println(courseResponse.getCourses().getApi().get(i).getCourseTitle());
+
+        }
+
+        // Print all Web Automation courses
+        for (int i = 0; i < courseResponse.getCourses().getWebAutomation().size(); i++) {
+
+            System.out.println(courseResponse.getCourses().getWebAutomation().get(i).getCourseTitle());
+
+        }
+
+        // Print all Mobile courses
+        for (int i = 0; i < courseResponse.getCourses().getMobile().size(); i++) {
+
+            System.out.println(courseResponse.getCourses().getMobile().get(i).getCourseTitle());
+
+        }
+
+        // Find Selenium course
+        for (int i = 0; i < courseResponse.getCourses().getWebAutomation().size(); i++) {
+
+            // Check course title
+            if (courseResponse.getCourses().getWebAutomation().get(i).getCourseTitle()
+                    .equalsIgnoreCase("Selenium Webdriver Java")) {
+
+                // Print course price
+                System.out.println(courseResponse.getCourses().getWebAutomation().get(i).getPrice());
+
+                break;
+            }
+        }
     }
-
 }
