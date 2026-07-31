@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/RestAssurd.png" alt="REST Assured OAuth API Automation Framework" width="100%">
+</p>
+
 # REST Assured OAuth API Automation
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
