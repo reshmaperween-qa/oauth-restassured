@@ -13,7 +13,7 @@
 
 ## 📊 View Report
 
-🚧 Live report will be added soon.
+TestNG HTML report is available in the test-output folder.
 
 ## 📌 About
 
