@@ -6,6 +6,10 @@
 ![Maven](https://img.shields.io/badge/Maven-Build-blue)
 ![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black)
 
+## 📊 View Report
+
+🚧 Live report will be added soon.
+
 ## 📌 About
 
 This project demonstrates REST Assured API automation using Java.
