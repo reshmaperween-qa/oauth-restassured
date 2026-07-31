@@ -174,8 +174,6 @@ This framework can be integrated with:
 
 ---
 
----
-
 ### ⭐ Thanks for visiting!
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
