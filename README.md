@@ -172,5 +172,12 @@ This framework can be integrated with:
 
 > Add your API response screenshot here.
 
-## 👩‍💻 Author
-**Reshma Perween**
+---
+
+---
+
+### ⭐ Thanks for visiting!
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+**Made with ❤️ by Reshma Perween**
