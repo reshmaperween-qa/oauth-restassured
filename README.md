@@ -81,6 +81,36 @@ oauth-restassured
               ▼
     TestNG / HTML Reports
 ```
+## 🔄 API Test Workflow
+
+```text
+TestNG Test
+      │
+      ▼
+Request Specification
+      │
+      ▼
+REST Assured Request
+      │
+      ▼
+API Response
+      │
+      ▼
+Response Validation
+      │
+      ▼
+Test Report
+```
+## ⚙️ Configuration
+
+| Configuration | Description |
+|--------------|-------------|
+| Java | JDK 17 or above |
+| Maven | Dependency Management |
+| TestNG | Test Execution |
+| REST Assured | API Automation |
+| IDE | Eclipse / IntelliJ IDEA |
+
 ## ▶️ Running Locally
 
 ```bash
