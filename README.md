@@ -10,11 +10,13 @@
 ![TestNG](https://img.shields.io/badge/TestNG-Testing-red)
 ![Maven](https://img.shields.io/badge/Maven-Build-blue)
 ![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black)
+![Build](https://github.com/reshmaperween-qa/oauth-restassured/actions/workflows/maven.yml/badge.svg)
 
 ## 📊 View Report
 
-TestNG HTML report is available in the test-output folder.
+## 🚀 Build Status
 
+This project is automatically built and tested using GitHub Actions on every push to the `main` branch.
 ## 📌 About
 
 This project demonstrates REST Assured API automation using Java.
