@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="assets/RestAssurd.png" alt="REST Assured OAuth API Automation Framework" width="100%">
+  <img src="RestAssured.png" alt="REST Assured OAuth API Automation Framework" width="100%">
 </p>
+
 
 # REST Assured OAuth API Automation
 
