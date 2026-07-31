@@ -171,11 +171,15 @@ This framework can be integrated with:
 
 ### Test Report
 
-> Add your TestNG or Extent Report screenshot here.
+> ### Test Report
+
+> TestNG HTML reporting will be added in the next version of the framework.
 
 ### API Response
 
-> Add your API response screenshot here.
+> ### API Response
+
+> Successful API execution with JSON response.
 
 ---
 
