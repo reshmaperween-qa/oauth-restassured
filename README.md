@@ -41,14 +41,56 @@ This project demonstrates REST Assured API automation using Java.
 ## 📂 Project Structure
 
 ```text
-src
-└── main
-    └── java
-        └── com
-            └── reshma
-                └── oauth
-                    └── OAuthTest.java
+oauth-restassured
+│
+├── src
+│   ├── main
+│   │   └── java
+│   └── test
+│       └── java
+│
+├── postman
+├── pom.xml
+├── README.md
+└── .gitignore
 ```
+## ⚙️ Framework Architecture
 
+```text
+        TestNG Tests
+              │
+              ▼
+      OAuth Test Classes
+              │
+              ▼
+    Request Specification
+              │
+              ▼
+      API Request Methods
+              │
+              ▼
+  Request / Response Logging
+              │
+              ▼
+    Response Validation
+              │
+              ▼
+    TestNG / HTML Reports
+```
+## ▶️ Running Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/reshmaperween-qa/oauth-restassured.git
+
+# Open the project
+cd oauth-restassured
+
+# Install dependencies
+mvn clean install
+
+# Run tests
+mvn test
+```
 ## 👩‍💻 Author
 **Reshma Perween**
