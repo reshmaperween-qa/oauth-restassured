@@ -1,5 +1,11 @@
 # REST Assured OAuth API Automation
 
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Rest Assured](https://img.shields.io/badge/Rest_Assured-API-green)
+![TestNG](https://img.shields.io/badge/TestNG-Testing-red)
+![Maven](https://img.shields.io/badge/Maven-Build-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black)
+
 ## About
 This project demonstrates REST Assured API automation using Java.
 
