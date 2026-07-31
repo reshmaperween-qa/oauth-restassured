@@ -113,17 +113,27 @@ Test Report
 
 ## ▶️ Running Locally
 
+Clone the repository:
+
 ```bash
-# Clone the repository
 git clone https://github.com/reshmaperween-qa/oauth-restassured.git
+```
 
-# Open the project
+Go to the project folder:
+
+```bash
 cd oauth-restassured
+```
 
-# Install dependencies
+Install dependencies:
+
+```bash
 mvn clean install
+```
 
-# Run tests
+Run the test suite:
+
+```bash
 mvn test
 ```
 ## 👩‍💻 Author
