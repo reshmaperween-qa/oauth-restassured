@@ -157,7 +157,8 @@ This framework can be integrated with:
 - Jenkins
 - GitHub Actions
 - Maven
-  ## 📷 Screenshots
+
+## 📷 Screenshots
 
 ### Test Execution
 
