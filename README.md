@@ -177,24 +177,6 @@ This framework can be integrated with:
   <img src="screenshots/test-report.png" alt="Test Report" width="90%">
 </p>
 
-### Test Execution
-
-> Add your test execution screenshot here.
-
-### Test Report
-
-> ### Test Report
-
-> TestNG HTML reporting will be added in the next version of the framework.
-
-### API Response
-
-> ### API Response
-
-> Successful API execution with JSON response.
-
----
-
 ### ⭐ Thanks for visiting!
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
