@@ -150,5 +150,13 @@ Report Location:
 ```text
 test-output/index.html
 ```
+## 🔄 CI/CD
+
+This framework can be integrated with:
+
+- Jenkins
+- GitHub Actions
+- Maven
+  
 ## 👩‍💻 Author
 **Reshma Perween**
