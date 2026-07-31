@@ -136,5 +136,19 @@ Run the test suite:
 ```bash
 mvn test
 ```
+## 📊 Reporting
+
+After execution, the framework generates:
+
+- ✅ TestNG Report
+- ✅ Console Execution Logs
+- ✅ Request & Response Logs
+- ✅ API Validation Results
+
+Report Location:
+
+```text
+test-output/index.html
+```
 ## 👩‍💻 Author
 **Reshma Perween**
