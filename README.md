@@ -163,7 +163,19 @@ This framework can be integrated with:
 - GitHub Actions
 - Maven
 
-## 📷 Screenshots
+## 📸 Screenshots
+
+### Test Execution
+
+<p align="center">
+  <img src="screenshots/test-execution.png" alt="Test Execution" width="90%">
+</p>
+
+### Test Report
+
+<p align="center">
+  <img src="screenshots/test-report.png" alt="Test Report" width="90%">
+</p>
 
 ### Test Execution
 
