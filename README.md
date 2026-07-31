@@ -157,6 +157,19 @@ This framework can be integrated with:
 - Jenkins
 - GitHub Actions
 - Maven
-  
+  ## 📷 Screenshots
+
+### Test Execution
+
+> Add your test execution screenshot here.
+
+### Test Report
+
+> Add your TestNG or Extent Report screenshot here.
+
+### API Response
+
+> Add your API response screenshot here.
+
 ## 👩‍💻 Author
 **Reshma Perween**
